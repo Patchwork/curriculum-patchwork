@@ -6,9 +6,11 @@
     - Introduce the Project
 * Editing Pages
     - Introduce Jekyll (conceptually)
-    - Editing Markdown
+    - Creating and editing in a branch
+    - Markdown
     - Where to Find Pages, Posts
     - Editing Pages
+    - Pull requests
 * Creating new Content
     - Adding Pages
     - Adding Posts
