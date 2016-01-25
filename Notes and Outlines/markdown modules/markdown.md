@@ -1,6 +1,6 @@
 Markdown is a simple, human-readable markup language. In other words, it's a way to format plaintext in a way that is easy to read and write as plaintext, and which a program like Jekyll can then take and format easily.
 
-A lot of sites use markdown. You may have seen it in blog comments, reddit posts, or GitHub issues. GitHub pages and Jekyll use  It's popular because it's so easy to use.
+A lot of sites use markdown. You may have seen it in blog comments, reddit posts, or GitHub issues. It's popular because it's so easy to use. GitHub Pages and Jekyll use markdown to define the content of websites so you don't have to write HTML and CSS unless you're redesigning the site.
 
 In this lesson, we're going to go over the basics of markdown, as well as some GitHub-specific features. By the end, you'll be able to use markdown not only to produce beautiful Jekyll sites, but also around the web.
 
@@ -8,7 +8,7 @@ In this lesson, we're going to go over the basics of markdown, as well as some G
 
 ## Basic Text Formatting
 
-###Paragraphs
+### Paragraphs
 Let's start simple. Most text in markdown is just written as plaintext. To create a new paragraph, simply hit the "return/enter" button twice to create a blank line between your two paragraphs.
 
     This is a paragraph.
@@ -19,7 +19,7 @@ Let's start simple. Most text in markdown is just written as plaintext. To creat
 > 
 > This is another paragraph.
 
-###Bold
+### Bold
 Say you're writing a message, and you want one part to be highlighted to the recipient is more likely to pay attention to it. You bold the message. In markdown, you bold text by wrapping it in two asterixes.
 
     This text is plain, **this text is bold**.
@@ -28,7 +28,7 @@ Say you're writing a message, and you want one part to be highlighted to the rec
 
 The wrapped text will end up bold in the final project.
 
-###Italics
+### Italics
 If you want to italitize some text, you can wrap it with a single underscore character on each side.
 
     We're reading _My Brilliant Friend_ in our book club this month.
@@ -37,14 +37,14 @@ If you want to italitize some text, you can wrap it with a single underscore cha
 
 Using a single asterisk will also work if you don't like the looks of the underscore character.
 
-###Strikeout
+### Strikeout
 You can also strike out text by using two tildes to wrap the text.
 
     This ~~text will appear striked out~~.
 
 > This ~~text will appear striked out~~.
 
-###Formatting across paragraphs.
+### Formatting across paragraphs.
 Bolding, italicizing, and striking out are all line-level formats. That is to say, they won't work across paragraphs. For instance, if you want to bold two whole paragraphs, you'll have to separately mark each one as bolded.
 
     **Bold paragraph the first.**
@@ -55,56 +55,56 @@ Bolding, italicizing, and striking out are all line-level formats. That is to sa
 > 
 > **Bold paragraph the second.**
 
-###Headers
+### Headers
 Headers are created using hash marks before the text designed to be a header. The entire paragraph will become a header. A header can have one to six hash marks before it. The more hashes, the smaller the header will be.
 
-    #Title
+    # Title
     
-    ##Introduction
+    ## Introduction
     
     This is the introduction text.
     
-    ##Chapter 1
+    ## Chapter 1
     
     This is the first chapter's text.
 
-> #Title
+> # Title
 > 
-> ##Introduction
+> ## Introduction
 > 
 > This is the introduction text.
 > 
-> ##Chapter 1
+> ## Chapter 1
 > 
 > This is the first chapter's text.
 
 All of the headers look like this: 
 
-    #Header 1
+    # Header 1
     
-    ##Header 2
+    ## Header 2
     
-    ###Header 3
+    ### Header 3
     
-    ####Header 4
+    #### Header 4
     
-    #####Header 5
+    ##### Header 5
     
-    ######Header 6
+    ###### Header 6
     
-    #######Not a header
+    ####### Not a header
 
 ---
 
-##Document formatting
+## Document formatting
 
 Sometimes you need to do more than just make paragraphs and mark up the text inside of them. Markdown includes methods for creating lists, quoted text, and more.
 
-###Lists
+### Lists
 
 There are two types of lists in markdown, **ordered lists** and **unordered lists**.
 
-####Unordered Lists
+#### Unordered Lists
 
 To create an unordered list, you put an asterix at the beginning of each new item in the list, and separate the items by a single new line.
 
@@ -126,7 +126,7 @@ Dashes and pluses can also be used to create list items, so this is a valid list
 
 Some people prefer to use dashes or plus symbols because they are not used anywhere else in markdown formatting, but others prefer to use the asterisk because it looks more like a bullet. The choice is up to you!
 
-####Ordered Lists
+#### Ordered Lists
 
 To create an ordered lists, instead of putting an asterisk, dash, or plus before the list item, you put a number and a period.
 
@@ -150,7 +150,7 @@ This markup will still generate a  list that looks like this:
 > 2. Item 2
 > 9. Item 3
 
-####List formatting
+#### List formatting
 
 Whether ordered or unordered, all lists follow some simple rules.
 
@@ -201,7 +201,7 @@ You can include multiple paragraphs inside of a list by indenting the paragraphs
 > 2. Item 2
 
 
-###Blockquotes
+### Blockquotes
 
 Sometimes you want to quote a large chunk of text and put it off from the rest of the text. Blockquotes are a way to do this. To create a blockquote, add an greater-than sign at the beginning of the line of the paragraph you want to quote.
 
@@ -229,13 +229,13 @@ Blockquotes can be nested by adding multiple greater-than signs.
 
 Blockquotes can be used in a variety of ways. For instance, we're using blockquotes to show how code will look once formatted.
 
-###Code
+### Code
 
 There are two ways to demarkate code in your text.
 
 Code will display in a monospaced font, and will escape any markdown formatting (so that you see the actual characters, not formatted text).
 
-####In-line Code
+#### In-line Code
 
 You can wrap a line of code in back-tic marks to make that line show up in a monospaced font.
 
@@ -244,7 +244,7 @@ You can wrap a line of code in back-tic marks to make that line show up in a mon
 > To **bold text**, `add **two asterisks**`.
 
 
-####Code Blocks
+#### Code Blocks
 
 If you add 4 spaces at the beginning of a line, markdown will treat that whole line as code. Any spaces that you indent beyond the 4 will show up to the user, so that you can show embedded code blocks.
 
@@ -257,9 +257,9 @@ If you add 4 spaces at the beginning of a line, markdown will treat that whole l
 >       * List sub-item 1
 
 
-##Links, Images, and HTML
+## Links, Images, and HTML
 
-###Links
+### Links
 
 Links are the lifeblood of the internet. Linking to other pages on your own site, and other sites on the internet, is a vital function. You can easily create links in markdown.
 
@@ -274,7 +274,7 @@ Which produces the following link:
 Let's break that down. Inside the brackets, you find the text you want to display to the user. Directly after the brackets (no spaces!), you put a URL inside parentheses. This URL must start with `http://` or `https://`, or the link won't form.
 
 
-###Images
+### Images
 
 Images work similarly to links.
 
@@ -289,7 +289,7 @@ After that comes the alternate text. Unlike with a link, this text will not be v
 Images will show up as their original size, so it's recommended that you use small images. If you're good at web design, then you can resize them using the CSS files.
 
 
-###HTML
+### HTML
 
 Markdown works by being turned into HTML for your browser to read. As such, you can include HTML in your markdown documents, and it will work just fine. For instance, if you wanted to make sure that a link opened in a new window or tab, you could include the following markdown:
 
