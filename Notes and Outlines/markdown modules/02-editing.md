@@ -1,21 +1,20 @@
 # Editing Your GitHub Page
 
-Let's start off with something easy. We've set up your with a placeholder project, which you'll now edit to include 
+We've set you up with a project to get started with. Now let's see how to make some edits to it. If you're not clear on the GitHub workflow, we recommend that you complete the [Wheelhouse GitHub Workflow course](https://learn.wheelhouse.io/events/workflow) first. 
 
-## The GitHub Workflow and Pages
-If you're not clear on the workflow, we recommend that you complete the Wheelhouse GitHub Workflow course first. 
+## Profile vs. Project Pages
 
-There are two kinds of GitHub Page projects: profile pages, and project pages. Every GitHub account gets one profile page. Profile pages are displayed from the `master` branch, and so are managed just like any other GitHub project. Your profile page must have the title of `username.github.io`, where `username` is your GitHub username. To see your profile page, just go to the same URL as the title, so `http://username.github.io`.
+There are two kinds of GitHub Page projects: profile pages, and project pages. Every personal and organizational GitHub account gets one profile page. Profile pages are displayed from the `master` branch, and so are managed just like any other GitHub project. Your profile page must have the title of `username.github.io`, where `username` is your GitHub username or the name of the organization. To see your profile page, just go to the same URL as the title, so `http://username.github.io`.
 
 While you can only have one profile page, you can have as many project pages as you have projects. To create a project page, create a branch on any project called `gh-pages`. The HTML, CSS, and Jekyll information there will be displayed at `http://username.github.io/project-name`. So if a user named Jamal has a project named "startup-landing-page" with a `gh-pages` branch, he'd be able to get to his site at `http://jamal.github.io/startup-landing-page`.
 
-Whether on a profile or project page, it's best to create a branch before you do any editing on your page. Name the branch something related to the work that you're doing. For instance, you might want to call a branch `adding-personal-info` or `new-blog-post`. Make sure to make any edits and commits to that branch, not to `master` or `gh-pages`. 
+Whether on a profile or project page, it's best to create a branch before you do any editing of your page. You should name the branch something related to the work that you're doing. For instance, you might want to call a branch `adding-personal-info` or `new-blog-post`. Make sure to make any edits and commits to that branch, not to `master` or `gh-pages`. 
 
-Then once you're ready, create a Pull Request comparing your branch to `master` or `gh-pages`, and merge the branch once you're sure everything is working.
+Then once you're ready, you'd create a Pull Request comparing your branch to `master` or `gh-pages`, and merge the branch once you're sure everything is working.
 
 ![GitHub Workflow](https://github.com/wheelhouse/curriculum-patchwork/github-flow.png)
 
-Note that you won't be able to test your page online from your branch—you won't see it until you merge the branch. Thus, once it's up you may need to create a bugfix branch quickly to touch up any rough spots. If you'd like to see your site before it goes live, you'll have to do that using Jekyll locally. We'll cover how to do that in the 4th section of this course.
+Note that you won't be able to test your page online from your branch—you won't see it until you merge the branch. So, once it's up you may need to create a bugfix branch to touch up any rough spots. If you'd like to see your site before it goes live, you'll have to do that using Jekyll locally. We'll cover how to do that in the optional fourth section of this course as it's a little complex to get set up.
 
 
 ## The Structure of a Jekyll Project
@@ -37,11 +36,11 @@ The `css` and `_sass` folders contain the CSS design information for your site.
 
 The `_config.yml` file contains configuration information about the project that Jekyll will use when running the project.
 
-The `.gitignore` file is used by git to prevent needing to sync unneccessary files (those that Jekyll produces automatically). And finally, the `feed.xml` file lets someone subscribe to your blog using an RSS reader.
+The `.gitignore` file is used by git to prevent the saving of unneccessary files that Jekyll produces automatically. Finally, the `feed.xml` file allows someone subscribe to your site using an RSS reader.
 
 
 ## Editing Files Using Markdown
-Editing the content of your site is as easy as writing plain text with a couple of added elements. These elements are called "markdown", and are used by Jekyll to know how to format the text. 
+Editing the content of your site is as easy as writing plain text with a couple of added elements. These elements are called "markdown", and are used by Jekyll to format the text. 
 
 For instance, if you wrap some text in double-asterisks, `**like so**`, you'll see bold text, **like so**. A single underscore before and after some text will _italicize_ it, `_like this_`.
 
@@ -57,18 +56,18 @@ You can even add links and images using markdown using the following syntax:
 
     ![This is the image alt text.](http://link.url/image.jpg)
 
-That's really all you need to know about markdown to get started. In the "Issues" tab at the top of your repo, you'll find a comment that explains markdown in some detail—feel free to read there if you feel like you need more info.
+That's really all you need to know about markdown to get started. In the "Issues" tab at the top of your repo, you'll find a comment that explains markdown in some detail—feel free to check it out.
 
 ### Frontmatter
 
-You'll see that each of the markdown pages also has some code at the top of the page. This is called frontmatter, and it's used by Jekyll to render the pages. Don't worry abou this for now, we'll learn more about what it does and how to use it in a future lesson. Just don't edit it, focus on editing the content.
+You'll see that each of the markdown pages also has some code at the top of the page. This is called frontmatter, and it's used by Jekyll to render the pages. Don't worry about this for now, we'll learn more about what it does and how to use it in a future lesson. Just don't edit it, let's focus on editing the content.
 
 
 ## Tying It All Together
 
 On the next page, we'll be walking you through the steps of editing the front page of your project to make it about you. You'll be editing the markdown files in the `_index` folder. 
 
-Don't worry if you don't want to put your actual information up. It's OK to just make stuff up. But if you do want to create an actual portfolio, we'd recommend doing that here!
+Don't worry if you don't want to put your actual information up online. It's OK to just make stuff up. But if you do want to create an actual portfolio, we'd recommend doing that here!
 
 - [ ] Create a branch, `profile-info`.
 - [ ] Edit `index_name.md`, commit.
