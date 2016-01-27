@@ -1,10 +1,10 @@
 # Creating New Pages and Posts with Jekyll
 
-OK, so now you know how to edit information in an existing page, but how about creating a new page or blog post? Jekyll makes this very easy as well, and we'll show you how now.
+OK, so now you know how to edit information in an existing page, but how about creating a new page or blog post? Jekyll makes this very easy as well.
 
 ## Front Matter
 
-The hardest part about creating new pages is that you have to create the proper front matter along with the markdown content. Don't worry though, this "hardest part" is actually quite easy once you know what you're doing.
+The hardest part about creating new pages is that you have to create the proper front matter along with the markdown content. Don't worry though, this "hardest part" is pretty easy once you know what you're doing.
 
 Front matter in Jekyll refers to a little block of code that you put at the beginning of a file in order to tell Jekyll how to handle the content. It defines what the title of the page is, what layout it will use, and more.
 
@@ -45,7 +45,7 @@ categories: jekyll update
 ---
 ```
 
-Here you can see that we use a different layout for our blog posts than we do for our pages. The title is also wrapped in quotes. This is not necessary with most titles, but if you have a colon in your title or other punctuation marks, it can prevent the YAML from being parsed incorrectly.
+Here you can see that we use a different layout for our blog posts than we do for our pages. The title is also wrapped in quotes. This is not necessary with most titles, but if you have a colon in your title or other punctuation marks, it prevents those marks from breaking the YAML parser.
 
 There are also two new variables. `date:` is the date and time that you published this post at. We use this variable to order the posts on the blog. `categories:` defines the tags that will appear with the blog content. You can either include a space between each category, or create a list of categories using square brackets and commas.
 
