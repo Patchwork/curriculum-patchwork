@@ -8,7 +8,7 @@ With GitHub Pages you could just build a site from scratch and upload the HTML a
 
 ### Uses for GitHub Pages
 
-People use GitHub Pages for a variety of reasons. Initially, it was built to allow people to host their own GitHub profile pages and to create websites for their open source projects on GitHub. You'll see this reflected in some of the design choices that we'll show you later.
+People use GitHub Pages for a variety of reasons. Initially, it was built to allow people to host their own GitHub profile pages, and to create websites promoting and documenting their open source projects on GitHub. You'll see this reflected in some of the design choices that we'll show you later.
 
 However, GitHub Pages can be used to host any sort of static website or blog. Use it as a content management system, to advertise a small business, to write a serialized novel, or to build a fan site for your favorite K-Pop star. 
 
