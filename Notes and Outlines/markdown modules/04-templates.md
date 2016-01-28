@@ -41,7 +41,7 @@ Our first liquid command is `{{ page.title }}`. This command is telling the temp
 
 Next, inside the `<p>` tag, comes some more complicated liquid. It starts off with `{{ page.date | date: "%b %-d, %Y" }}`. Here, we're telling liquid to display the date found in the page, but also how to display it. The pipe `|` character passes the content returned by the command on the left through the process to the right. The `date:` command accepts a date from liquid, and then formats it in a specific way. Here we started with the abreviated month name `%b`, a space, then the day of the month without a leading zero `%-d`, then a comma and space, then the 4-digit year `%Y`. So `Jan 5, 2016` would be the output for the post from the last lesson.
 
-#### Logic in Liquid
+### Logic in Liquid
 
 After that, we have our first logic command, found inside a curly bracket with percent symbol. This is an `if` command. It tells liquid to only display the contents between the `if` and `endif` commands if the condition in the `if` command is true. Here, `if page.author` will only be true if the post has an `author:` variable defined in the front matter. For instance, if the post had Jamal listed as an author, liquid would display ` • Jamal`, while if it didn't have an author listed, liquid would not display the name or the bullet point. The same is true for the `page.meta` variable.
 
@@ -86,3 +86,12 @@ This will list the author of every post that has a title. If a post doesn't have
 
 ## CSS Templates
 
+Jekyll uses a CSS preprocessor called SASS to generate CSS files. SASS is a lot like Liquid, but for CSS instead of HTML. 
+
+The biggest thing that SASS lets you do is break up your CSS files into little pieces and then include them in one final large file. However, it also has some other handy features including Nesting and Variables.
+
+You can find out about all of SASS's features at <a href="http://sass-lang.com/guide" target="_blank">the SASS website</a>, but we'll explain a few below as well.
+
+### Including files
+
+One way to make writing CSS easier is to separate your functions. One file might be for text, 
