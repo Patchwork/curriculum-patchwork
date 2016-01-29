@@ -46,15 +46,19 @@ For instance, if you wrap some text in double-asterisks, `**like so**`, you'll s
 
 Adding between one and six hash signs on a new line will make the text after it become a header.
 
-    # Title
-    ## Header
-    ### Sub-Header
+```markdown
+# Title
+## Header
+### Sub-Header
+```
 
 You can even add links and images using markdown using the following syntax:
 
-    [This is the text you will see.](http://link.url)
+```markdown
+[This is the text you will see.](http://link.url)
 
-    ![This is the image alt text.](http://link.url/image.jpg)
+![This is the image alt text.](http://link.url/image.jpg)
+```
 
 That's really all you need to know about markdown to get started. In the "Issues" tab at the top of your repo, you'll find a comment that explains markdown in some detail—feel free to check it out.
 
