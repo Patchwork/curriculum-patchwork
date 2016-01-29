@@ -71,7 +71,8 @@ Don't worry if you don't want to put your actual information up online. It's OK 
 
 - [ ] Create a branch, `profile-info`.
 - [ ] Edit `index_name.md`, commit.
-- [ ] Edit `index_content.md`, commit.
-- [ ] Edit `index_img.md`, commit. You must use an image already online. You can upload and image of yourself to imgur.com if you dont' have one. Or right-click on your GitHub profile image, select "copy image URL", and use that.
-- [ ] Create a branch comparing `gh-pages` to `profile-info`.
+-     Edit `index_content.md`, commit.
+-     Edit `index_img.md`, commit. You must use an image already online. You can upload and image of yourself to imgur.com if you dont' have one. Or right-click on your GitHub profile image, select "copy image URL", and use that.
+- [ ] Create a PR comparing `gh-pages` to `profile-info`.
+- [ ] Merge that PR.
 -     Look at your creation at `http://username.github.io/profile`.

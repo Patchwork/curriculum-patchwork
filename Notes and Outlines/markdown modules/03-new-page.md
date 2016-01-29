@@ -129,13 +129,13 @@ This will display something like this:
 
 ## Your Turn!
 
-- [ ] Create a new branch, `new-page`.
+-     Create a new branch, `new-page`.
 -     Create a new file for your job history page.
-- [ ] Add your job history, commit. If you don't want to add anything, copy/paste from the prevous lesson.
-- [ ] PR.
-- [ ] Merge.
+-     Add your job history, commit. If you don't want to add anything, copy/paste from the prevous lesson.
+-     PR.
+-     Merge.
 -     Create a new file in the posts.
 -     Write a blog post.
-- [ ] Commit it to a new branch, `new-post`.
-- [ ] PR, merge.
+-     Commit it to a new branch, `new-post`.
+-     PR, merge.
 - Go to your website and look at the changes you've made.
