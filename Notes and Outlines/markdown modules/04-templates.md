@@ -86,12 +86,72 @@ This will list the author of every post that has a title. If a post doesn't have
 
 ## CSS Templates
 
-Jekyll uses a CSS preprocessor called SASS to generate CSS files. SASS is a lot like Liquid, but for CSS instead of HTML. 
+Jekyll uses a CSS preprocessor called Sass to generate CSS files. Sass is a lot like Liquid, but for CSS instead of HTML. 
 
-The biggest thing that SASS lets you do is break up your CSS files into little pieces and then include them in one final large file. However, it also has some other handy features including Nesting and Variables.
+The biggest thing that Sass lets you do is break up your CSS files into little pieces and then include them in one final large file. However, it also has some other handy features including Nesting and Variables.
 
-You can find out about all of SASS's features at <a href="http://sass-lang.com/guide" target="_blank">the SASS website</a>, but we'll explain a few below as well.
+You can find out about all of Sass's features at <a href="http://sass-lang.com/guide" target="_blank">the Sass website</a>, but we'll explain a few below as well.
 
-### Including files
+One thing to note: Jekyll won't handle your Sass files properly unless you include some frontmatter at the top of the file. The easiest way to do this is to just include a comment, so adding something like the following to each of your files will suffice.
 
-One way to make writing CSS easier is to separate your functions. One file might be for text, 
+```yaml
+---
+# Adding front matter for Jekyll
+---
+```
+
+### Importing Sass files
+
+One way to make writing CSS easier is to separate your functions. This way you might have one file that defines what a blog post looks like, one file that defines what the front page looks like, one for your header, etc.. This way it's a lot easier to go in and find the CSS you'd like to change late.
+
+The easiest way to do this is to include all the CSS for your app in .scss files in the `_sass` folder, and then have your `main.scss` file just act as a place to import those files.
+
+To import a file from the `_sass` folder, just include the following rule in your main.scss file.
+
+```css
+@import
+  "filename",
+  "filename2"
+;
+```
+
+### Variables and Mixins
+
+Sass lets you set variables to use throughout your CSS files. This is particularly handy for giving values that you know you'll use a lot a simple keyword. If you look in your `/css/main.scss` file, you'll see we've defined a number of variables used through the CSS. Variables can be defined _either_ in the file they're used in, _or_ in the `main.scss` file. Variables should always come at the top of a file, and always begin with a `$` sign.
+
+Variables are particularly handy because if you'd like to change the text font everywhere, you only need to update the value of the variable.
+
+Mixins are sort of like variables, but for properties instead of values. This way, if you know that you'll always want to define two more more properties with the same value, you can define a mixin that will take a single value and add it to all of the properties you want. 
+
+This is particularly useful when dealing with vendor prefixes.
+
+For information on how and when to write mixins, look at the <a href="http://sass-lang.com/guide#topic-6" targer="_blank">official Sass user guide</a>.
+
+### Nesting
+
+Sass lets you nest rules inside each other, just like HTML lets you nest tags. This makes writing CSS rules a little bit easier, and will force you to group like code together.
+
+For instance, take this code from our `/_sass/_layout.scss` file:
+
+```css
+.site-nav {
+    float: right;
+    line-height: 56px;
+
+    .menu-icon {
+        display: none;
+    }
+
+    .page-link {
+        color: $text-color;
+        line-height: $base-line-height;
+
+        // Gaps between nav items, but not on the first one
+        &:not(:first-child) {
+            margin-left: 20px;
+        }
+    }
+  }
+```
+
+Here we define rules for the `.site-nav` class as we normally would. However, instead of closing the tags at the end, then opening another rule for `.site-nav .menu-icon`, we simply open the rule for `.menu-icon` inside of the rule for `.site-nav`. This way, all of the rules related to `.site-nav` are found grouped together and in context of each other, making them much easier to write and read.
