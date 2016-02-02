@@ -1,4 +1,4 @@
-title: Introduction to GitHub
+title: Introduction to GitHub Pages
 pre-requisites: 
 learning-objective: What are GH Pages?
 screens:
@@ -12,11 +12,10 @@ screens:
 
         With GitHub Pages you could just build a site from scratch and upload the HTML and CSS files to host them on GitHub. However, most people use a piece of software called Jekyll. Jeckyll lets you create HTML and CSS templates for describing the look and feel of your site and then add the content to the pages using a simpler format called Markdown. Markdown is a formatting language that is incredibly easy to read and write, making adding pages, blog posts, or otherwise changing the content of your Jekyll site quick and easy.
 
+
         ### Uses for GitHub Pages
 
-        People use GitHub Pages for a variety of reasons. Initially, it was built to allow people to host their own GitHub profile pages, and to create websites promoting and documenting their open source projects on GitHub. You'll see this reflected in some of the design choices that we'll show you later.
-
-        However, GitHub Pages can be used to host any sort of static website or blog. Use it as a content management system, to advertise a small business, to write a serialized novel, or to build a fan site for your favorite K-Pop star. 
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/WRQHdzlepAM" frameborder="0" allowfullscreen></iframe>
 
 
         ## This Course

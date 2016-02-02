@@ -1,0 +1,14 @@
+title: GitHub Pages Demo
+description: GitHub Pages
+
+sections:
+  -
+    title: Intro to GitHub Pages
+    description: This section introduces you to GitHub and the collaboration features we will use throughout the class.
+    modules:
+      - GHP-01-intro
+  -
+    title: Editing Your GitHub Page
+    description: This section introduces you to GitHub and the collaboration features we will use throughout the class.
+    modules:
+      - GHP-02-editing

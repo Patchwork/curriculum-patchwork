@@ -1,4 +1,4 @@
-title: Branches
+title: Editing Your GitHub Page
 pre-requisites: 
 learning-objective: 
 screens:
@@ -6,15 +6,19 @@ screens:
       title: Editing Content in GitHub Pages
       image: blank.jpg
       presenter-script: |
-        We've set you up with a project to get started with. Now let's see how to make some edits to it. If you're not clear on the GitHub workflow, we recommend that you complete the [Wheelhouse GitHub Workflow course](https://learn.wheelhouse.io/events/workflow) first.
+        We've set you up with a project to get started with. Now let's see how to make some edits to it. If you're not clear on the GitHub workflow, we recommend that you complete the [Wheelhouse GitHub Workflow course](https://learn.wheelhouse.io/events/workflow) first. 
+
 
         ## Profile vs. Project Pages
 
         There are two kinds of GitHub Page projects: profile pages, and project pages. Every personal and organizational GitHub account gets one profile page. Profile pages are displayed from the `master` branch, and so are managed just like any other GitHub project. Your profile page must have the title of `username.github.io`, where `username` is your GitHub username or the name of the organization. To see your profile page, just go to the same URL as the title, so `http://username.github.io`.
 
-        While you can only have one profile page, you can have as many project pages as you have projects. To create a project page, create a branch on any project called `gh-pages`. The HTML, CSS, and Jekyll information there will be displayed at `http://username.github.io/project-name`. So if a user named Jamal has a project named "startup-landing-page" with a `gh-pages` branch, he'd be able to get to his site at `http://jamal.github.io/startup-landing-page`.
+        While you can only have one profile page, you can have as many project pages as you have projects. To create a project page, create a branch on any project called `gh-pages`. The HTML, CSS, and Jekyll information there will be displayed at `http://username.github.io/project-name`. So if a user named Jamal has a project named "startup-landing-page" with a `gh-pages` branch, he'd be able to get to his site by navigating to `http://jamal.github.io/startup-landing-page` in his browser.
 
-        Whether on a profile or project page, it's best to create a branch before you do any editing of your page. You should name the branch something related to the work that you're doing. For instance, you might want to call a branch `adding-personal-info` or `new-blog-post`. Make sure to make any edits and commits to that branch, not to `master` or `gh-pages`.
+
+        ## GitHub Pages and the GitHub Workflow
+
+        Whether on a profile or project page, it's best to create a branch before you do any editing of your page. You should name the branch something related to the work that you're doing. For instance, you might want to call a branch `adding-personal-info` or `new-blog-post`. Make sure to make any edits and commits to that branch, not to `master` or `gh-pages`. 
 
         Then once you're ready, you'd create a Pull Request comparing your branch to `master` or `gh-pages`, and merge the branch once you're sure everything is working.
 
@@ -24,28 +28,12 @@ screens:
 
 
         ## The Structure of a Jekyll Project
-        Let's take a look at the directory we created for you by clicking on the "Repository" button on the top-left of this page.
 
-        You'll be presented with the GitHub repository we created for you. We've already set up a template site, let's take a look at it.
-
-        In the top level directory are several folders and files.
-
-        The `index.html` file is the home page of your site. It contains the layout that people will see when they navigate to the site.
-
-        The `_index` folder contains markdown files with the content for your index page. There are several pages in here that define your profile image, your header, and the body of the site.
-
-        The `_layouts` folder contains the layouts for the other static pages of your website. The `_pages` folder contains the content for the static pages, and the `_posts` folder contains the content for the blog posts. Every time you add a new markdown file to `_pages` or `_posts`, you'll create a new page or blog post which uses the layout that you tell it to in the frontmatter of the markdown file.
-
-        The `_includes` folder contains layout elements that will show up on every part of your web site, such as the header and footer, regardless of which layout is used.
-
-        The `css` and `_sass` folders contain the CSS design information for your site. 
-
-        The `_config.yml` file contains configuration information about the project that Jekyll will use when running the project.
-
-        The `.gitignore` file is used by git to prevent the saving of unneccessary files that Jekyll produces automatically. Finally, the `feed.xml` file allows someone subscribe to your site using an RSS reader.
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/169LpksYRqo" frameborder="0" allowfullscreen></iframe>
 
 
         ## Editing Files Using Markdown
+
         Editing the content of your site is as easy as writing plain text with a couple of added elements. These elements are called "markdown", and are used by Jekyll to format the text. 
 
         For instance, if you wrap some text in double-asterisks, `**like so**`, you'll see bold text, **like so**. A single underscore before and after some text will _italicize_ it, `_like this_`.
@@ -75,7 +63,7 @@ screens:
 
         ## Tying It All Together
 
-        On the next page, we'll be walking you through the steps of editing the front page of your project to make it about you. You'll be editing the markdown files in the `_home` folder.
+        On the next page, we'll be walking you through the steps of editing the front page of your project to make it about you. You'll be editing the markdown files in the `_index` folder.
   - lab:
       title: Editing Your Profile Page's Content
       id: GHP-02-editing
