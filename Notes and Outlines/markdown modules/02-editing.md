@@ -6,7 +6,9 @@ We've set you up with a project to get started with. Now let's see how to make s
 
 There are two kinds of GitHub Page projects: profile pages, and project pages. Every personal and organizational GitHub account gets one profile page. Profile pages are displayed from the `master` branch, and so are managed just like any other GitHub project. Your profile page must have the title of `username.github.io`, where `username` is your GitHub username or the name of the organization. To see your profile page, just go to the same URL as the title, so `http://username.github.io`.
 
-While you can only have one profile page, you can have as many project pages as you have projects. To create a project page, create a branch on any project called `gh-pages`. The HTML, CSS, and Jekyll information there will be displayed at `http://username.github.io/project-name`. So if a user named Jamal has a project named "startup-landing-page" with a `gh-pages` branch, he'd be able to get to his site at `http://jamal.github.io/startup-landing-page`.
+While you can only have one profile page, you can have as many project pages as you have projects. To create a project page, create a branch on any project called `gh-pages`. The HTML, CSS, and Jekyll information there will be displayed at `http://username.github.io/project-name`. So if a user named Jamal has a project named "startup-landing-page" with a `gh-pages` branch, he'd be able to get to his site by navigating to `http://jamal.github.io/startup-landing-page` in his browser.
+
+# GitHub Pages and the GitHub Workflow
 
 Whether on a profile or project page, it's best to create a branch before you do any editing of your page. You should name the branch something related to the work that you're doing. For instance, you might want to call a branch `adding-personal-info` or `new-blog-post`. Make sure to make any edits and commits to that branch, not to `master` or `gh-pages`. 
 
