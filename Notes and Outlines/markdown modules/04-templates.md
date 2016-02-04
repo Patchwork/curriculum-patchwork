@@ -155,3 +155,38 @@ For instance, take this code from our `/_sass/_layout.scss` file:
 ```
 
 Here we define rules for the `.site-nav` class as we normally would. However, instead of closing the tags at the end, then opening another rule for `.site-nav .menu-icon`, we simply open the rule for `.menu-icon` inside of the rule for `.site-nav`. This way, all of the rules related to `.site-nav` are found grouped together and in context of each other, making them much easier to write and read.
+
+## Tying it Together
+
+When writing templates and the CSS for them, it's important to realize that you can't add `class` and `id` attributes to markdown as you would with HTML. This is where nesting CSS attributes comes in handy.
+
+Each template you build should wrap the entirety of the markdown conten in a `div` with a `class` set to the same name as the template. For instance, the `blog.html` template wraps the markdown content in some code that looks like this:
+
+```html
+<div class="blog-content">
+  {{ content }}
+</div>
+```
+
+Now if you want to give special formatting for the headers in a blog post, you'd add the following code to your `blog.scss` file:
+
+```css
+.blog-content {
+  h1 {
+    # header 1 rules
+  }
+  h2 {
+    # header 2 rules
+  }
+}
+```
+
+And so on. 
+
+### Front Matter vs. Markdown
+
+At times, you won't have enough flexibility with markdown alone to create the designs you want, and this is where adding content to front matter can come in handy. For instance, in creating our `_index/content.md` file, we could have had you place the link to the image inside the markdown, instead of in the front matter.
+
+However, this would have given us less flexibility in defining where the image goes on the page. By putting it in the front matter, we can embed the image outside of the "content" `div`, and thus position the image relative to the content instead of inside the content. The same goes for the `author` and `title` of a blog post.
+
+Jekyll is very versitile in this way, but it means that you'll have to experiment with what works in order to make smart decisions about how to format your site. As a general rule though, anything that you can think of as "data" _can_ go in the front matter, and anything that's better thought of as "content" _should_ go in the markdown. Whether some "data" should go in the front matter or markdown will be determined by how you want to use it in the template.
