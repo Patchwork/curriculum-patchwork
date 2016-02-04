@@ -1,12 +1,12 @@
 # Creating New Pages and Posts with Jekyll
 
-OK, so now you know how to edit information in an existing page, but how about creating a new page or blog post? Jekyll makes this very easy as well.
+Now that you've learned how to edit content, let's go through how to add your own pages and blog posts.
+
+Jekyll makes this easy. All you have to do is add a markdown file with proper front matter to the right folder. In this lesson, we're going to teach you how to format your page and post files so that you can blog on your new site, and add any permanent pages that you want. When you're finished, you'll be able to customize and add any information you want to your new website.
 
 ## Front Matter
 
-The hardest part about creating new pages is that you have to create the proper front matter along with the markdown content. Don't worry though, this "hardest part" is pretty easy once you know what you're doing.
-
-Front matter in Jekyll refers to a little block of code that you put at the beginning of a file in order to tell Jekyll how to handle the content. It defines what the title of the page is, what layout it will use, and more.
+The hardest part about creating new pages is that you have to create the proper front matter along with the markdown content. The good news is that this "hardest part" is really easy!
 
 Let's take a look at the front matter on our "about" page.
 
@@ -79,7 +79,7 @@ permalink: /work-history/
 _Created websites for clients._
 
 * Developed on average 1 new website per month.
-* Responsible for accounts totally $3,000,000 in value.
+* Responsible for accounts totaling $3,000,000 in value.
 * Managed part-time visual and UX designers.
 
 
