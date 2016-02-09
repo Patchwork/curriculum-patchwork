@@ -14,23 +14,23 @@ screens:
 
         For instance, this is the default blog post template included in all new Jekyll installs. It's found in the `_layouts` folder and is called `post.html`.
 
-        ```html
-        ---
-        layout: default
-        ---
-        <div class="post">
 
-          <header class="post-header">
-            <h1 class="post-title">{{ page.title }}</h1>
-            <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
-          </header>
+            ---
+            layout: default
+            ---
+            <div class="post">
 
-          <article class="post-content">
-            {{ content }}
-          </article>
+              <header class="post-header">
+                <h1 class="post-title">{{ page.title }}</h1>
+                <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+              </header>
 
-        </div>
-        ```
+              <article class="post-content">
+                {{ content }}
+              </article>
+
+            </div>
+
 
 
         Let's look at how this works. First, there is front matter just like with our markdown files. This front matter says that this template also uses another template. Templates can be embedded within each other in this way—so you might have one basic template with stuff like a header and footer, then more specific templates that fit inside that one for static pages and blog posts.
@@ -55,37 +55,29 @@ screens:
 
         There is one more logical operator you should know about. The `for` command allows you to cycle through multiple objects. For example, let's look at the following code excerpted from our blog page found in `/_pages/03_blog.md`
 
-        ```html
+              <ul class="post-list">
+                {% for post in site.posts %}
+                  <li>
+                    <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
-          <ul class="post-list">
-            {% for post in site.posts %}
-              <li>
-                <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-                <h2>
-                  <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-                </h2>
-              </li>
-            {% endfor %}
-          </ul>
-
-        ```
+                    <h2>
+                      <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                    </h2>
+                  </li>
+                {% endfor %}
+              </ul>
 
         Here, the `for` command takes every file in the `_posts` folder (called with `site.post`), creates a temporary object called `post` for that file, and then populates the content below for each of those files. 
 
         You can combine for and if statements, for instance, consider the following hypothetical code from a template:
 
-        ```html
-
-        <ul class="author-list">
-          {% for post in site.posts %}
-            {% if post.title %}
-              <li>{{ post.author }}</li>
-            {% endif %}
-          {% endfor %}
-        </ul>
-
-        ```
+            <ul class="author-list">
+              {% for post in site.posts %}
+                {% if post.title %}
+                  <li>{{ post.author }}</li>
+                {% endif %}
+              {% endfor %}
+            </ul>
 
         This will list the author of every post that has a title. If a post doesn't have a title, the author will not be shown. While this example might be impractical, you'll find uses for using `for` and `if` together the further into templates you delve.
 
@@ -101,11 +93,9 @@ screens:
 
         One thing to note: Jekyll won't handle your Sass files properly unless you include some frontmatter at the top of the file. The easiest way to do this is to just include a comment, so adding something like the following to each of your files will suffice.
 
-        ```yaml
-        ---
-        # Adding front matter for Jekyll
-        ---
-        ```
+            ---
+            # Adding front matter for Jekyll
+            ---
 
         ### Importing Sass files
 
@@ -115,12 +105,11 @@ screens:
 
         To import a file from the `_sass` folder, just include the following rule in your main.scss file.
 
-        ```css
-        @import
-          "filename",
-          "filename2"
-        ;
-        ```
+            @import
+              "filename",
+              "filename2"
+            ;
+
 
         ### Variables and Mixins
 
@@ -140,26 +129,26 @@ screens:
 
         For instance, take this code from our `/_sass/_layout.scss` file:
 
-        ```css
-        .site-nav {
-            float: right;
-            line-height: 56px;
 
-            .menu-icon {
-                display: none;
-            }
+            .site-nav {
+                float: right;
+                line-height: 56px;
 
-            .page-link {
-                color: $text-color;
-                line-height: $base-line-height;
-
-                // Gaps between nav items, but not on the first one
-                &:not(:first-child) {
-                    margin-left: 20px;
+                .menu-icon {
+                    display: none;
                 }
-            }
-          }
-        ```
+
+                .page-link {
+                    color: $text-color;
+                    line-height: $base-line-height;
+
+                    // Gaps between nav items, but not on the first one
+                    &:not(:first-child) {
+                        margin-left: 20px;
+                    }
+                }
+              }
+
 
         Here we define rules for the `.site-nav` class as we normally would. However, instead of closing the tags at the end, then opening another rule for `.site-nav .menu-icon`, we simply open the rule for `.menu-icon` inside of the rule for `.site-nav`. This way, all of the rules related to `.site-nav` are found grouped together and in context of each other, making them much easier to write and read.
 
@@ -169,24 +158,22 @@ screens:
 
         Each template you build should wrap the entirety of the markdown conten in a `div` with a `class` set to the same name as the template. For instance, the `blog.html` template wraps the markdown content in some code that looks like this:
 
-        ```html
-        <div class="blog-content">
-          {{ content }}
-        </div>
-        ```
+            <div class="blog-content">
+              {{ content }}
+            </div>
+
 
         Now if you want to give special formatting for the headers in a blog post, you'd add the following code to your `blog.scss` file:
 
-        ```css
-        .blog-content {
-          h1 {
-            # header 1 rules
-          }
-          h2 {
-            # header 2 rules
-          }
-        }
-        ```
+
+            .blog-content {
+              h1 {
+                # header 1 rules
+              }
+              h2 {
+                # header 2 rules
+              }
+            }
 
         And so on. 
 

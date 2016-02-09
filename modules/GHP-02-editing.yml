@@ -37,19 +37,15 @@ screens:
 
         Adding between one and six hash signs on a new line will make the text after it become a header.
 
-        ```markdown
-        # Title
-        ## Header
-        ### Sub-Header
-        ```
+            # Title
+            ## Header
+            ### Sub-Header
 
         You can even add links and images using markdown using the following syntax:
 
-        ```markdown
-        [This is the text you will see.](http://link.url)
-
-        ![This is the image alt text.](http://link.url/image.jpg)
-        ```
+            [This is the text you will see.](http://link.url)
+            
+            ![This is the image alt text.](http://link.url/image.jpg)
 
         That's really all you need to know about markdown to get started. In the "Issues" tab at the top of your repo, you'll find a comment that explains markdown in some detail—feel free to check it out.
 
@@ -57,19 +53,17 @@ screens:
 
         You'll notice that all of the markdown files have some code at the beginning. This code is contained within dashes, and looks something like this:
 
-        ```yaml
-        ---
-        title: Hello
-        author: Jamal Phillips
-        layout: blog
-        ---
-        ```
+            ---
+            title: Hello
+            author: Jamal Phillips
+            layout: blog
+            ---
 
         This is called "front matter". It defines variables for Jekyll to use on that particular page. The word before the colon is the variable name, and text after it is the variable's value. We'll go more in depth on this later, but for right now just know that if you'd like to change the variable for a page (for instance, if you want to set your name to the author of a post), all you have to do is change the text after the colon.
 
         ## The Structure of a Jekyll Project
-        
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/3s2jMJo9_yM" frameborder="0" allowfullscreen></iframe>
+
+        <div class='container' data-video-url='https://youtu.be/3s2jMJo9_yM'></div>
 
         **Key take-aways:** 
 
