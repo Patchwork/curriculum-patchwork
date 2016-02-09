@@ -1,5 +1,6 @@
 title: GitHub Pages Demo
 description: GitHub Pages
+# configurator_class: Configurator::GitHubPages
 
 sections:
   -
