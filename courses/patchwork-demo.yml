@@ -4,11 +4,21 @@ description: GitHub Pages
 sections:
   -
     title: Intro to GitHub Pages
-    description: This section introduces you to GitHub and the collaboration features we will use throughout the class.
+    description: What is GitHub Pages and Jekyll?
     modules:
       - GHP-01-intro
   -
     title: Editing Your GitHub Page
-    description: This section introduces you to GitHub and the collaboration features we will use throughout the class.
+    description: How to edit markdown files.
     modules:
       - GHP-02-editing
+  -
+    title: Creating New Pages and Posts
+    description: How to add markdown files to the Jekyll project to create new pages.
+    modules:
+      - GHP-03-creating
+  -
+    title: Updating Design Elements in Jekyll
+    description: How to add markdown files to the Jekyll project to create new pages.
+    modules:
+      - GHP-04-templates

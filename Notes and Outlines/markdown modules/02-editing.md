@@ -2,11 +2,13 @@
 
 We've set you up with a project to get started with. Now let's see how to make some edits to it. If you're not clear on the GitHub workflow, we recommend that you complete the [Wheelhouse GitHub Workflow course](https://learn.wheelhouse.io/events/workflow) first. 
 
-## Profile vs. Project Pages
+## User vs. Project Pages
 
-There are two kinds of GitHub Page projects: profile pages, and project pages. Every personal and organizational GitHub account gets one profile page. Profile pages are displayed from the `master` branch, and so are managed just like any other GitHub project. Your profile page must have the title of `username.github.io`, where `username` is your GitHub username or the name of the organization. To see your profile page, just go to the same URL as the title, so `http://username.github.io`.
+There are two kinds of GitHub Page projects: user pagess, and project pages. Every personal and organizational GitHub account gets one user pages. Profile pages are displayed from the `master` branch, and so are managed just like any other GitHub project. Your user pages must have the title of `username.github.io`, where `username` is your GitHub username or the name of the organization. To see your user pages, just go to the same URL as the title, so `http://username.github.io`.
 
-While you can only have one profile page, you can have as many project pages as you have projects. To create a project page, create a branch on any project called `gh-pages`. The HTML, CSS, and Jekyll information there will be displayed at `http://username.github.io/project-name`. So if a user named Jamal has a project named "startup-landing-page" with a `gh-pages` branch, he'd be able to get to his site by navigating to `http://jamal.github.io/startup-landing-page` in his browser.
+While you can only have one user pages, you can have as many project pages as you have projects. To create a project page, create a branch on any project called `gh-pages`. The HTML, CSS, and Jekyll information there will be displayed at `http://username.github.io/project-name`. So if a user named Jamal has a project named "startup-landing-page" with a `gh-pages` branch, he'd be able to get to his site by navigating to `http://jamal.github.io/startup-landing-page` in his browser.
+
+In this course, we'll be walking you through creating a project page—but at any time you can make it a user page by changing the name of the project in your "settings" tab, then updating the `master` branch to be up to date with `gh-pages` by submitting and merging a pull request comparing the two.
 
 ## GitHub Pages and the GitHub Workflow
 
@@ -78,6 +80,15 @@ The `_config.yml` file contains configuration information about the project that
 
 The `.gitignore` file is used by git to prevent the saving of unneccessary files that Jekyll produces automatically. Finally, the `feed.xml` file allows someone subscribe to your site using an RSS reader.
 
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/3s2jMJo9_yM" frameborder="0" allowfullscreen></iframe>
+
+        **Key take-aways:** 
+
+        * The `index.html` file defines the layout of your home page. The file in the `_index` folder defines the content.
+        * The `_layouts` and `_includes` folders define the layout of the rest of the pages.
+        * The `_pages` folder holds the content of your pages, and `_posts` is for blog posts. To create a new page or post, you just create a markdown file here.
+        * The `config.yml` file tells Jekyll about your site. It's like front matter, but for the whole site instead of a single page.
+
 
 ## Tying It All Together
 
@@ -86,9 +97,8 @@ On the next page, we'll be walking you through the steps of editing the front pa
 Don't worry if you don't want to put your actual information up online. It's OK to just make stuff up. But if you do want to create an actual portfolio, we'd recommend doing that here!
 
 - [ ] Create a branch, `profile-info`.
-- [ ] Edit `index_name.md`, commit.
--     Edit `index_content.md`, commit.
--     Edit `index_img.md`, commit. You must use an image already online. You can upload and image of yourself to imgur.com if you dont' have one. Or right-click on your GitHub profile image, select "copy image URL", and use that.
+- [ ] In the `_index` folder, eding the `content.md` file then commit. You must use an image already online. You can upload and image of yourself to imgur.com if you dont' have one. Or right-click on your GitHub profile image, select "copy image URL", and use that.
+- [ ] Edit the `_config.yml` file with your name etc.
 - [ ] Create a PR comparing `gh-pages` to `profile-info`.
 - [ ] Merge that PR.
 -     Look at your creation at `http://username.github.io/profile`.
