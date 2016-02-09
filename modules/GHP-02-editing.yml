@@ -24,7 +24,7 @@ screens:
 
         Then once you're ready, you'd create a Pull Request comparing your branch to `master` or `gh-pages`, and merge the branch once you're sure everything is working.
 
-        ![GitHub Workflow](https://github.com/wheelhouse/curriculum-patchwork/github-flow.png)
+        ![GitHub Workflow](https://raw.githubusercontent.com/wheelhouseio/curriculum-patchwork/master/images/github-flow.png)
 
         Note that you won't be able to test your page online from your branch—you won't see it until you merge the branch. So, once it's up you may need to create a bugfix branch to touch up any rough spots. If you'd like to see your site before it goes live, you'll have to do that using Jekyll locally. We'll cover how to do that in the optional fourth section of this course as it's a little complex to get set up.
 
@@ -44,7 +44,7 @@ screens:
         You can even add links and images using markdown using the following syntax:
 
             [This is the text you will see.](http://link.url)
-            
+
             ![This is the image alt text.](http://link.url/image.jpg)
 
         That's really all you need to know about markdown to get started. In the "Issues" tab at the top of your repo, you'll find a comment that explains markdown in some detail—feel free to check it out.
@@ -93,13 +93,15 @@ screens:
               id: GHP-02-editing-branch-verification
               success-message: "Great job - you created a branch."
               failure-message: "It looks like you haven't created a branch yet."
-        - description: "Edit `/home/content.md.` Add a new image, name, and title to the front matter, and add your bio information to the content using markdown. Commit the changes."
+        - description: "Edit `/home/content.md`. Add a new image, name, and title to the front matter, and add your bio information to the content using markdown. Commit the changes."
           id: GHP-02-editing-commit
           verifications:
             - verification-type: file-modified
               id: GHP-02-editing-commit-verification
               success-message: "Great job, you updated your profile!"
               failure-message: "It looks like you haven't updated you profile yet."
+        - description: "Edit `_config.yml`. You should change the title, email, twitter, github, and description fields. In addition, you should change the `baseurl:` to the name of your github repo, and the `url:` to be `http://username.github.io`, where `username` is your github username. Otherwise, the page won't render correctly."
+          id: GHP-02-editing-config
         - description: "Create a new PR comparing `profile-info` to the base branch `gh-pages`."
           id: GHP-02-editing-pr
           verifications:
@@ -114,7 +116,7 @@ screens:
               id: GHP-02-editing-merge-pr-verification
               success-message: "Great job, you merged the PR."
               failure-message: "It looks like you haven't merged the PR yet."
-        - description: "Look at your creation at `http://username.github.io/profile`."
+        - description: "Look at your creation at `http://username.github.io/repo-name`."
           id: GHP-02-editing-create-branch
 additional-labs:
 additional-questions:
