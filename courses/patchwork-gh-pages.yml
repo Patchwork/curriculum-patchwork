@@ -1,0 +1,25 @@
+title: GitHub Pages Demo
+description: GitHub Pages
+configurator_class: Configurator::GitHubPages
+
+sections:
+  -
+    title: Intro to GitHub Pages
+    description: What is GitHub Pages and Jekyll?
+    modules:
+      - GHP-01-intro
+  -
+    title: Editing Your GitHub Page
+    description: How to edit markdown files.
+    modules:
+      - GHP-02-editing
+  -
+    title: Creating New Pages and Posts
+    description: How to add markdown files to the Jekyll project to create new pages.
+    modules:
+      - GHP-03-creating
+  -
+    title: Updating Design Elements in Jekyll
+    description: How to add markdown files to the Jekyll project to create new pages.
+    modules:
+      - GHP-04-templates

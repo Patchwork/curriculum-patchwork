@@ -1,0 +1,20 @@
+title: Patchwork Intro to Git on the CLI
+description: An intro to using Git on the command line for Patchwork
+
+sections:
+  -
+    title: Setting up Git
+    description: In this section you will learn how to configure Git on your local machine for the best experience.
+    modules:
+      - DSS-10_command-line-interface
+      - DSS-11_cli-config
+      - DSS-END-05_setting-up-git
+  -
+    title: Using GitHub Locally
+    description: In this section you will learn how to clone the repository to your desktop and work locally to make changes.
+    modules:
+      - DSS-12_cloning
+      - DSS-13_editing-locally
+      - DSS-14_two-stage-commit
+      - DSS-15_pushing
+      - DSS-END-06_using-github-locally
