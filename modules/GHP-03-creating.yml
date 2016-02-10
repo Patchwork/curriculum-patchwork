@@ -95,7 +95,7 @@ screens:
 
         The post should look something like this:
 
-        ![New Page Screenshot](page-screenshot.jpg)
+        ![New Page Screenshot](https://raw.githubusercontent.com/wheelhouseio/curriculum-patchwork/master/images/gh-pages-page.png)
 
         ## Creating a New Post
 
@@ -124,7 +124,7 @@ screens:
 
         This will display something like this:
 
-        ![Blog Post Screenshot](blog-post-screenshot.jpg)
+        ![Blog Post Screenshot](https://raw.githubusercontent.com/wheelhouseio/curriculum-patchwork/master/images/gh-pages-blog.png)
   - lab:
       title: Create a New Page
       id: GHP-03-creating
