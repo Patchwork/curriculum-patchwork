@@ -186,25 +186,6 @@ screens:
         However, this would have given us less flexibility in defining where the image goes on the page. By putting it in the front matter, we can embed the image outside of the "content" `div`, and thus position the image relative to the content instead of inside the content. The same goes for the `author` and `title` of a blog post.
 
         Jekyll is very versitile in this way, but it means that you'll have to experiment with what works in order to make smart decisions about how to format your site. As a general rule though, anything that you can think of as "data" _can_ go in the front matter, and anything that's better thought of as "content" _should_ go in the markdown. Whether some "data" should go in the front matter or markdown will be determined by how you want to use it in the template.
-  - lab:
-      title: Editing Your Profile Page's Content
-      id: GHP-03-creating
-      presenter-script:
-      introduction: |
-        Follow the steps below to add a new page to your website.
-      steps:
-        - description: "Create a new branch off the `gh-pages` branch called `job-history`."
-          id: GHP-03-creating-branch
-        - description: "In the `_pages` folder, create a file called `job-history.md`."
-          id: GHP-03-creating-new-file
-        - description: "Add your job history to the file and hit commit. If you'd like, you can copy and past the job history we provided on the last page."
-          id: GHP-03-creating-commit
-        - description: "Create a pull request comparing `job-history` to `gh-pages`."
-          id: GHP-03-creating-merge-pr
-        - description: "Merge the pull request."
-          id: GHP-03-creating-merge-pr
-        - description: "Go to your website to see the changes."
-          id: GHP-03-creating-create-branch
 additional-labs:
 additional-questions:
 resources:
