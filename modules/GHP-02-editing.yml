@@ -12,7 +12,7 @@ screens:
 
         ## User vs. Project Pages
 
-        There are two kinds of GitHub Page projects: user pagess, and project pages. Every personal and organizational GitHub account gets one user pages. Profile pages are displayed from the `master` branch, and so are managed just like any other GitHub project. Your user pages must have the title of `username.github.io`, where `username` is your GitHub username or the name of the organization. To see your user pages, just go to the same URL as the title, so `http://username.github.io`.
+        There are two kinds of GitHub Page projects: user pages, and project pages. Every personal and organizational GitHub account gets one user pages. Profile pages are displayed from the `master` branch, and so are managed just like any other GitHub project. Your user pages must have the title of `username.github.io`, where `username` is your GitHub username or the name of the organization. To see your user pages, just go to the same URL as the title, so `http://username.github.io`.
 
         While you can only have one user pages, you can have as many project pages as you have projects. To create a project page, create a branch on any project called `gh-pages`. The HTML, CSS, and Jekyll information there will be displayed at `http://username.github.io/project-name`. So if a user named Jamal has a project named "startup-landing-page" with a `gh-pages` branch, he'd be able to get to his site by navigating to `http://jamal.github.io/startup-landing-page` in his browser.
 
@@ -93,14 +93,17 @@ screens:
               id: GHP-02-editing-branch-verification
               success-message: "Great job - you created a branch."
               failure-message: "It looks like you haven't created a branch yet."
-        - description: "Edit `/home/content.md`. Add a new image, name, and title to the front matter, and add your bio information to the content using markdown. Commit the changes."
+        - description: "Edit `/_index/content.md`. Add a new image, name, and title to the front matter, and add your bio information to the content using markdown. Commit the changes."
           id: GHP-02-editing-commit
           verifications:
             - verification-type: file-modified
               id: GHP-02-editing-commit-verification
               success-message: "Great job, you updated your profile!"
               failure-message: "It looks like you haven't updated you profile yet."
-        - description: "Edit `_config.yml`. You should change the title, email, twitter, github, and description fields. In addition, you should change the `baseurl:` to the name of your github repo, and the `url:` to be `http://username.github.io`, where `username` is your github username. Otherwise, the page won't render correctly."
+        - description: |
+            Edit `_config.yml`. You should change the title, email, twitter, github, and description fields. 
+
+            In addition, you should change the `baseurl:` to the **name of your github repo**, and the `url:` to be `http://username.github.io`, where `username` is your github username. Otherwise, the page won't render correctly."
           id: GHP-02-editing-config
         - description: "Create a new PR comparing `profile-info` to the base branch `gh-pages`."
           id: GHP-02-editing-pr

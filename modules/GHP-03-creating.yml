@@ -12,7 +12,7 @@ screens:
 
         The hardest part about creating new pages is that you have to create the proper front matter along with the markdown content. The good news is that this "hardest part" is really easy!
 
-        Let's take a look at the front matter on our "about" page.
+        Let's take a look at the front matter on our "about" page (`01_about.md` in the `_pages` folder).
 
             ---
             layout: page
@@ -20,11 +20,9 @@ screens:
             permalink: /about/
             ---
 
-            This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+            This is a Jekyll project provided by Wheelhouse.io. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
 
-            You can find the source code for the Jekyll new theme at: [github.com/jglovier/jekyll-new](https://github.com/jglovier/jekyll-new)
-
-            You can find the source code for Jekyll at [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll)
+            You can get back to your course by going to [github.wheelhouse.io/events](http://github.wheelhouse.io/events). 
 
         First, you'll notice that the front matter is wrapped in two lines containing three dashes each. This is mandatory! It tells Jekyll what is front matter and what is markdown.
 
@@ -61,7 +59,7 @@ screens:
 
         Now add your front matter. Two lines with nothing but three dashes on each line, and then define your `layout:`, `title:`, and `permalink:` variables.
 
-        After that, it's as easy as adding new markdown to the file below. For instance, if you wanted to add a page with your work history, you might include the following in a file called `work-history.md`.
+        After that, it's as easy as adding new markdown to the file below. For instance, if you wanted to add a page with your work history, you might include the following in a file called `02-work-history.md` (the `02` is there so it will go _before_ the blog page on your nav bar).
 
             ---
             layout: page
@@ -70,7 +68,9 @@ screens:
             ---
 
             ## Web Developer
+
             ### Acme Inc.
+
             #### March 2001 — January, 2005
 
             _Created websites for clients._
@@ -81,7 +81,9 @@ screens:
 
 
             ## Job Title
+
             ### Company
+
             #### Date Started - Date Ended
 
             _Description of the job and duties._
@@ -99,7 +101,7 @@ screens:
 
         Creating a new blog post is in many ways like creating a new page, but Jekyll needs a different set of information about the post, and it needs to be named in a special way.
 
-        Create a new file in the `_posts` folder. The filename should start with the date, followed by a title separated by dashes. The date should be formatted `YYYY-MM-DD`. So a post about tacos published on January 5th, 2016 would be titled `2016-01-05-why-i-love-tacos.md`. 
+        Create a new file in the `_posts` folder. The filename should start with the date, followed by a title separated by dashes. The date should be formatted `YYYY-MM-DD`. So a post about tacos published on February 5th, 2016 would be titled `2016-02-05-why-i-love-tacos.md`. 
 
         Then you need to write the front matter and text of the post. Remember, the `title:` tag will show up on the page, so you don't need to include it in the markdown.
 
@@ -107,7 +109,7 @@ screens:
             ---
             layout: post
             title:  Why I love tacos
-            date:   2016-01-05 10:30:00
+            date:   2016-02-05 10:30:00
             categories: [tacos, food, explainer]
             ---
 
@@ -115,7 +117,7 @@ screens:
 
             Tacos are incredibly versatile. You can put meat in them. You can make them vegetarian. You can use soft or hard shells. One taco may be bite-sized or large enough to provide an entire meal. 
 
-            ![Taco Inspiration](https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/001_Tacos_de_carnitas%2C_carne_asada_y_al_pastor.jpg)
+            ![Taco Inspiration](https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/001_Tacos_de_carnitas%2C_carne_asada_y_al_pastor.jpg/2560px-001_Tacos_de_carnitas%2C_carne_asada_y_al_pastor.jpg)
 
             The next time you're not sure what to eat, try going to the best local Mexican restaurant and ordering the chef's choice of tacos. They're sure to be extra-yummy!
 
@@ -130,13 +132,13 @@ screens:
       introduction: |
         Follow the steps below to add a new page to your website.
       steps:
-        - description: "Create a new branch off the `gh-pages` branch called `job-history`."
+        - description: "Create a new branch off the `gh-pages` branch called `work-history`."
           id: GHP-03-creating-branch
-        - description: "In the `_pages` folder, create a file called `job-history.md`."
+        - description: "In the `_pages` folder, create a file called `work-history.md`."
           id: GHP-03-creating-new-file
-        - description: "Add your job history to the file and hit commit. If you'd like, you can copy and past the job history we provided on the last page."
+        - description: "Add your work history to the file and hit commit. If you'd like, you can copy and past the work history we provided on the last page."
           id: GHP-03-creating-commit
-        - description: "Create a pull request comparing `job-history` to `gh-pages`."
+        - description: "Create a pull request comparing `work-history` to `gh-pages`."
           id: GHP-03-creating-merge-pr
         - description: "Merge the pull request."
           id: GHP-03-creating-merge-pr
