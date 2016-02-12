@@ -34,9 +34,9 @@ screens:
       presenter-script:
         - Let's make some changes to our local files.
       steps:
-        - description: Open your bio file in a text editor.
+        - description: Open your `bio` file in a text editor. If you don't have a `bio` file, then create it.
           id: DSS-13-open
-        - description: Add more information to your bio.
+        - description: Add some information to your bio.
           id: DSS-13-edit
         - description: Save the file.
           id: DSS-13-save

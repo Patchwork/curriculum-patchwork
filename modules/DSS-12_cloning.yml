@@ -11,6 +11,8 @@ screens:
         But first, we have to make a local copy of your repository. To do this, we have to "clone" the repository that you have hosted on GitHub.
 
         When you clone a GitHub repository you are creating a copy of everything in that repository, including its history. This is one of the benefits of a distributed VCS like git—rather than being required to query a slow centralized server to review the commit history, queries are run locally and are lightning fast.
+
+        To make this easier, we've set up a repository for you, which you can find by clicking on the "Repository" link at the upper left hand side of this or any page.
   - video-slide:
       title: Cloning a Repository
       video: https://youtu.be/PADLsDJK7Jk

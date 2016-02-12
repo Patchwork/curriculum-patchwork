@@ -37,7 +37,7 @@ $ gcc -v
 
 You'll either get a version number, or a prompt to install xcode. Either say yes, or if you don't get the prompt type in 
 
-```
+```bash
 $ xcode-select --install
 ```
 
