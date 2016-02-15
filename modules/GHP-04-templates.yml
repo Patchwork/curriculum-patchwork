@@ -1,6 +1,6 @@
 title: Templates and Design
 pre-requisites: 
-learning-objective: 
+learning-objective: Editing the look and feel of a GH page.
 screens:
   - image-slide:
       title: Templates and Design
@@ -69,17 +69,22 @@ screens:
 
         Here, the `for` command takes every file in the `_posts` folder (called with `site.post`), creates a temporary object called `post` for that file, and then populates the content below for each of those files. 
 
-        You can combine for and if statements, for instance, consider the following hypothetical code from a template:
+        You can combine for and if statements, for instance, consider the following code from `/_includes/header.html` which creates the nav bar at the top of the page:
 
-            <ul class="author-list">
-              {% for post in site.posts %}
-                {% if post.title %}
-                  <li>{{ post.author }}</li>
-                {% endif %}
-              {% endfor %}
-            </ul>
+            <nav class="site-nav">
 
-        This will list the author of every post that has a title. If a post doesn't have a title, the author will not be shown. While this example might be impractical, you'll find uses for using `for` and `if` together the further into templates you delve.
+              <div class="trigger">
+                {% for page in site.pages %}
+                  {% if page.title %}
+                  <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+                  {% endif %}
+                {% endfor %}
+              </div>
+            </nav>
+
+        This will only list the pages that have a `title:` attribute defined in the front matter. This way, you can create new pages that aren't linked in the nav bar by simply not include the `title:` in the front matter.
+
+        But maybe you want all of your pages to include a `title:` but not all of them to show up in the nav bar. How might you go about doing that? A hint: You can always add more items to the front matter.
 
   - image-slide:
       title: CSS Templates Using SASS
@@ -186,6 +191,20 @@ screens:
         However, this would have given us less flexibility in defining where the image goes on the page. By putting it in the front matter, we can embed the image outside of the "content" `div`, and thus position the image relative to the content instead of inside the content. The same goes for the `author` and `title` of a blog post.
 
         Jekyll is very versitile in this way, but it means that you'll have to experiment with what works in order to make smart decisions about how to format your site. As a general rule though, anything that you can think of as "data" _can_ go in the front matter, and anything that's better thought of as "content" _should_ go in the markdown. Whether some "data" should go in the front matter or markdown will be determined by how you want to use it in the template.
+  - lab:
+      title: Create a New Page
+      id: GHP-04-templates
+      presenter-script:
+      introduction: |
+        Below are some projects that you can take on that will challenge your templating skills. We're leaving them more open-ended instead of giving you step-by-step instructions, so feel free to ask a mentor if you need help.
+      steps:
+        - description: "Edit your project so that you can have pages which have a `title:` element but which don't show up in the nav bar. You'll need to come up with a system (a mentor can help) and edit the `_includes/header.html` page, as well as the front matter in all of your site pages."
+          id: GHP-04-templates-nav-bar
+        - description: |
+            Earlier you created a Work History page. This isn't very well formatted though. Try using CSS and templates to clean up the page. If you create a Work History template you can wrap the content in a new div, and then format the elements using CSS so that formatting only applies to that page.
+
+            You might also look into the "collections" functionality in Jekyll. This would let you create a different markdown file (and front matter data) for each job description. How might this make formatting the page easier?
+          id: GHP-04-templates-work-history
 additional-labs:
 additional-questions:
 resources:
