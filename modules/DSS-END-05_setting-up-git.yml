@@ -7,6 +7,6 @@ screens:
       image: blank.jpg
       presenter-script: |
         <ul class="fa-ul">
-          <li><i class="fa fa-check-square-o"></i> Section 5: Setting up Git</li>
-          <li><i class="fa fa-square-o"></i> Section 6: Using GitHub Locally</li>
+          <li><i class="fa fa-check-square-o"></i> Section 1: Setting up Git</li>
+          <li><i class="fa fa-square-o"></i> Section 2: Using GitHub Locally</li>
         </ul>
