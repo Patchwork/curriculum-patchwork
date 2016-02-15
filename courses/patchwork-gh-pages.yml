@@ -23,3 +23,8 @@ sections:
     description: How to add markdown files to the Jekyll project to create new pages.
     modules:
       - GHP-04-templates
+  -
+    title: Installing Jekyll Locally and Setting Up a New Jekyll Project
+    description: How to Install Jekyll Locally and Set Up a New Jekyll Project
+    modules:
+      - GHP-05-installing
