@@ -1,6 +1,6 @@
 title: Creating Pages and Posts in Jekyll
 pre-requisites: 
-learning-objective: 
+learning-objective: Creating new pages.
 screens:
   - image-slide:
       title: Creating New Pages and Posts with Jekyll
