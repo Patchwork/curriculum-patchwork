@@ -103,7 +103,7 @@ screens:
         - description: |
             Edit `_config.yml`. You should change the title, email, twitter, github, and description fields. 
 
-            In addition, you should change the `baseurl:` to the **name of your github repo**, and the `url:` to be `http://username.github.io`, where `username` is your github username. Otherwise, the page won't render correctly."
+            In addition, you should change the `baseurl:` to the **name of your github repo**, and the `url:` to be `http://username.github.io`, where `username` is your github username. Otherwise, the page won't render correctly.
           id: GHP-02-editing-config
         - description: "Create a new PR comparing `profile-info` to the base branch `gh-pages`."
           id: GHP-02-editing-pr
