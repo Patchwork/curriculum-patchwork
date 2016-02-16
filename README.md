@@ -2,6 +2,10 @@
 
 Welcome to the Wheelhouse curriculum for Git and GitHub content used in the Patchwork Events. This repository contains the machine readable content used by Wheelhouse for delivering training courses.
 
+The live courses can be found at the following student- and mentor-facing page.
+
+## http://wheelhouseio.github.io/patchwork
+
 # Validating a curriculum
 
 The application assumes that the incoming curriculum is in the correct YAML format and uses the "right" schema for each element. The upside is that any failure rollsback the entire import so its an all-or-nothing process. The downside is there is very little feedback other than "it failed".
