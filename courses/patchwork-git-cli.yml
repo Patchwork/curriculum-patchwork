@@ -1,5 +1,6 @@
 title: Patchwork Intro to Git on the CLI
 description: An intro to using Git on the command line for Patchwork
+configurator_class: RepositoryConfigurator
 
 sections:
   -
