@@ -4,7 +4,7 @@ learning-objective: How to edit content.
 screens:
   - image-slide:
       title: Editing Content in GitHub Pages
-      image: blank.jpg
+      image: blank.png
       presenter-script: |
         # Editing Your GitHub Page
 
@@ -86,14 +86,16 @@ screens:
 
         Don't worry if you don't want to put your actual information up online. It's OK to just make stuff up. But if you do want to create an actual portfolio, we'd recommend doing that here!
       steps:
-        - description: "Create a new branch off the `gh-pages` branch called `profile-info`."
+        - description: |
+            Create a new branch off the `gh-pages` branch called `profile-info`.
           id: GHP-02-editing-branch
           verifications:
             - verification-type: branch-created
               id: GHP-02-editing-branch-verification
               success-message: "Great job - you created a branch."
               failure-message: "It looks like you haven't created a branch yet."
-        - description: "Edit `/_index/content.md`. Add a new image, name, and title to the front matter, and add your bio information to the content using markdown. Commit the changes."
+        - description: |
+            Edit `/_index/content.md`. Add a new image, name, and title to the front matter, and add your bio information to the content using markdown. Commit the changes.
           id: GHP-02-editing-commit
           verifications:
             - verification-type: file-modified
