@@ -7,7 +7,7 @@ GitHub Pages is a service that lets you host a website for free, using the Git v
 With GitHub Pages you could just build a site from scratch and upload the HTML and CSS files to host them on GitHub. However, most people use a piece of software called Jekyll. Jekyll lets you create HTML and CSS templates for describing the look and feel of your site and then add the content to the pages using a simpler format called Markdown. Markdown is a formatting language that is incredibly easy to read and write, making adding pages, blog posts, or otherwise changing the content of your Jekyll site quick and easy.
 
 ### Uses for GitHub Pages
-<div class='container' data-video-url='https://youtu.be/O424gUiASPY'></div>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/O424gUiASPY" frameborder="0" allowfullscreen></iframe>
 
 ## This Course
 
@@ -17,4 +17,6 @@ Once you've completed that project, we'll also show you how to edit the design o
 
 If you don't know how to branch and merge, we'd suggest you do the GitHub Workflow course first, and then come back to this course.
 
-All right, let's begin!
+**To complete this course, you'll need to fork <a href='https://github.com/wheelhouseio/project-gh-pages' target='_blank'>the coure project</a>** to your own repo. To do that, follow the link, then click on the `Fork` button on the top-right of the page. All work that you do in the course will be done in the new, forked repo, on the `gh-pages` branch.
+
+Go ahead and fork the repo, then let's begin!

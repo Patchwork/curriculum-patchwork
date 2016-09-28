@@ -9,13 +9,14 @@ But first, we have to make a local copy of your repository. To do this, we have 
 
 When you clone a GitHub repository you are creating a copy of everything in that repository, including its history. This is one of the benefits of a distributed VCS like git—rather than being required to query a slow centralized server to review the commit history, queries are run locally and are lightning fast.
 
-To make this easier, we've set up a repository for you, which you can find by clicking on the "Repository" link at the upper left hand side of this or any page.
+To make this easier, we've set up a repository for you, which can be found at <a href="https://github.com/wheelhouseio/workflow-project" target="_blank">https://github.com/wheelhouseio/workflow-project</a>.
 
-https://youtu.be/PADLsDJK7Jk
+###Instructions: How to Clone a Repository
 
-* Start a new branch on GitHub to work on.
-* Copy the clone URL on GitHub.
-* Using the command line, `cd` to the directory that you want to put your local repo in.
+<iframe width="560" height="315" src="https://www.youtube.com/embed/PADLsDJK7Jk" frameborder="0" allowfullscreen></iframe>
+
+* Copy the clone URL.
+* Using the command line on your computer, `cd` to the directory that you want to put your local repo in.
 * Type `git clone <clone_url>`.
 * You might be prompted for your password. You should enter your GitHub password at this point.
 * `cd` into the new cloned repo and type `git status`.
@@ -25,18 +26,19 @@ https://youtu.be/PADLsDJK7Jk
 
 ### Try it out: Cloning a Repository 
 
-Let's go ahead and clone this repository to your local desktop.
-
-* Create a new branch on GitHub. Name the branch `githubID-more-bio`, using your GitHub ID.
-* Clone the repository to your desktop using the Command Line.
-
+* Go to <a href="https://github.com/wheelhouseio/workflow-project" target="_blank">our repository</a> on GitHub.
+* On the upper-right hand corner, click on the `Fork` button. This will create a copy of the repo that you can edit.
+* Wait while the repo is forked. Once it has, use the `Clone or download` button to copy the URL of this new repository.
+* Use that URL to do a `git clone` command on your local computer. 
 
 ## Editing Local Files
 ![edit icon](/images/edit-icon.jpg)
 
 Now that you have cloned the repository and checked out your branch, you are ready to make some changes to the local files. If you are familiar with using the command line to open and edit files, then much of this will be familiar to you. The only difference here is that we will be making our changes on a branch. Let's add more information to the bio we created earlier.
 
-https://youtu.be/QYZnKoJ_Hdg
+###Instructions: How to Edit a Local File
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/QYZnKoJ_Hdg" frameborder="0" allowfullscreen></iframe>
 
 * `git branch` to make sure you're on the right branch.
 * `cd` to the proper directory, then open the file with your text editor.
@@ -94,9 +96,9 @@ In order to make a file part of the version controlled directory we will first d
 
 All of this happens locally, on your computer.
 
-Let's do it now.
+### Instructions: How to do a Two Stage Commit
 
-https://youtu.be/_gDABUBrmBA
+<iframe width="560" height="315" src="https://www.youtube.com/embed/_gDABUBrmBA" frameborder="0" allowfullscreen></iframe>
 
 * `git status` lets you see which files have been changed since the last commit.
 * `git add <filename>` adds that file to the staging area. 
@@ -116,7 +118,8 @@ Let's use the two-stage commit to stage and commit our changes to the `bio` file
 
 Now that you've committed files locally, it's time to make sure that your remote repository also reflects those changes. So we'll `push` the files and version history up to GitHub.
 
-https://youtu.be/C9mU7Vv0HSM
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/C9mU7Vv0HSM" frameborder="0" allowfullscreen></iframe>
 
 * Check `git status`: the working directory needs to be clean. If it's not, make sure there isn't anything that you meant to commit!
 * Do `git push`: assuming you set the default push behavior to simple, this will push your changes to the same branch on the remote system.

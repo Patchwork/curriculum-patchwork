@@ -10,7 +10,8 @@ You should create a PR early in the process of developing your new feature. This
 
 This video will show you how to create a Pull Request for your branch.
 
-<div class='container' data-video-url='https://youtu.be/kJr-PIfLDl4'></div>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/kJr-PIfLDl4" frameborder="0" allowfullscreen></iframe>
+
 
 ## Getting feedback on a Pull Request
 

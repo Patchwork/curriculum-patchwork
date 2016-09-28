@@ -20,7 +20,8 @@ Each branch you create should exist to introduce a single feature or fix a singl
 
 Here is a video walk-through of how to create a branch on GitHub:
 
-<div class='container' data-video-url='https://youtu.be/xgQmu81G1yY'></div>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/xgQmu81G1yY" frameborder="0" allowfullscreen></iframe>
+
 
 ##Commiting
 
@@ -30,17 +31,19 @@ Commits always have a brief message associated with them. The commit message is 
 
 Here's a short video on creating, editing, and commiting files on GitHub:
 
-<div class='container' data-video-url='https://youtu.be/47M6Is7pIB8'></div>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/47M6Is7pIB8" frameborder="0" allowfullscreen></iframe>
+
 
 
 ## Try it Out
 
 Now it is your turn to walk through the GitHub Workflow. Start by creating a branch and adding a new file to your repository.
 
-On the left side of the nav bar above, there is a link called `Repository`. If you click on it, you'll be brought to a GitHub repo that we created for you. From there, you can follow the instructions below. We'll validate certain steps as you go so you know you're doing it right.
+We have set up <a href='https://github.com/wheelhouseio/workflow-project' target='_blank'>a project</a> that you can fork and use for the steps below. 
 
-* Click on the `Repository` link.
-* Look around. This is the Code Veiw, where all your code in the repo is stored.
+* Navigate to <a href="https://github.com/wheelhouseio/workflow-project" target="_blank">the project</a>.
+* Fork the project by clicking on the `Fork` button in the upper-right hand corner.
+* Once it's finished, look around. This is the Code Veiw, where all your code in the repo is stored.
 * In the upper left, click on the drop down next to `Branch: master`. This is where you can create new branches, or switch to another branch.
 * Create a branch called `create-bio`.
 * On the `create-bio` branch, create a file called `new-file.md`. Include the following text:

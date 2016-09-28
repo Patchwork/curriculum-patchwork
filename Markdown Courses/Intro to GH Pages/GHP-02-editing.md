@@ -55,7 +55,7 @@ This is called "front matter". It defines variables for Jekyll to use on that pa
 
 ## The Structure of a Jekyll Project
 
-<div class='container' data-video-url='https://youtu.be/zclBSOh6yg8'></div>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/zclBSOh6yg8" frameborder="0" allowfullscreen></iframe>
 
 **Key take-aways:** 
 
@@ -75,9 +75,7 @@ Don't worry if you don't want to put your actual information up online. It's OK 
 * Create a new branch off the `gh-pages` branch called `profile-info`.
 * Edit `/_index/content.md`. Add a new image, name, and title to the front matter, and add your bio information to the content using markdown. Commit the changes.
 * Edit `_config.yml`. You should change the title, email, twitter, github, and description fields. 
- 
-  In addition, you should change the `baseurl:` to the **name of your github repo**, and the `url:` to be `http://username.github.io`, where `username` is your github username. Otherwise, the page won't render correctly.
-  id: GHP-02-editing-config
+* While in the `_config.yml` file, you should change the `baseurl:` to the **name of your github repo**, and the `url:` to be `http://username.github.io`, where `username` is your github username. Otherwise, the page won't render correctly.
 * Create a new PR comparing `profile-info` to the base branch `gh-pages`.
 * Merge the pull request.
 * Look at your creation at `http://username.github.io/repo-name`.
