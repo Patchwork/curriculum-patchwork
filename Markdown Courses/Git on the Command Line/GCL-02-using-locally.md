@@ -79,7 +79,7 @@ To add files to staging, you use the `git add <filename>` command.
 Staging is important because it lets you only stage some of your new or modified files. For instance, if you've added a new variable and fixed a typo, you might want to commit those two changes separately. To do this, you stage and commit each one separately.
 
 
-![two stage commit](two-stage-commit-d.png)
+![two stage commit](/images/two-stage-commit-d.png)
 
 When we are satisfied with the unit of work we have assembled, we will commit everything in the staging area.
 
