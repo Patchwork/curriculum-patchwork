@@ -19,7 +19,7 @@ On the next few pages, you'll learn more about how to use these features yoursel
 
 The GitHub Workflow is as much about creating a culture of collaboration as it is about using technology. Creating a collaborative culture is very important, because that's the human side of how work will actually get done.
 
-![The GitHub Workflow](https://raw.githubusercontent.com/1point618/curriculum-github/master/images/github-flow.png)
+![The GitHub Workflow](/images/github-flow.png)
 
 The GitHub Workflow is pretty simple.    
 

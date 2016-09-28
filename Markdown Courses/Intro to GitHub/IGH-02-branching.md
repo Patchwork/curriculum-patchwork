@@ -12,7 +12,7 @@ When you create a branch, you are creating a full copy of the parent branch and 
 
 It is common to have a bunch of different features or ideas in progress at any given time—some of which are ready to go, and others which are not. Branching exists to help you manage this workflow.
 
-![Branches](https://raw.githubusercontent.com/1point618/curriculum-github/master/images/github-branches.png)
+![Branches](/images/github-branches.png)
 
 Any time you want to start a new chunk of work, you should create a new branch for that work. 
 

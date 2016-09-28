@@ -87,7 +87,7 @@ After that, it's as easy as adding new markdown to the file below. For instance,
 
 The post should look something like this:
 
-![New Page Screenshot](https://raw.githubusercontent.com/wheelhouseio/curriculum-patchwork/master/images/gh-pages-page.png)
+![New Page Screenshot](/images/gh-pages-page.png)
 
 ## Creating a New Post
 
@@ -116,7 +116,7 @@ Then you need to write the front matter and text of the post. Remember, the `tit
 
 This will display something like this:
 
-![Blog Post Screenshot](https://raw.githubusercontent.com/wheelhouseio/curriculum-patchwork/master/images/gh-pages-blog.png)
+![Blog Post Screenshot](/images/gh-pages-blog.png)
 
 
 # Try it Out

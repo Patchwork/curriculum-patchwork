@@ -4,7 +4,7 @@
 
 Formally, a Pull Request (PR) is a request to merge one branch into another. More than that, a PR is used to have a discussion about the changes made in the branch. The PR also keeps track of the changes made on the branch until it's complete and the team agrees it can be merged. You'll use PRs frequently when working with your team, as they're the primary way to bring code on the master branch up to date with your feature branch once it's ready for production.
 
-![PR](https://raw.githubusercontent.com/wheelhouseio/curriculum-github/master/images/pull-request.png)
+![PR](/images/pull-request.png)
 
 You should create a PR early in the process of developing your new feature. This will allow you to get more members of your team involved in the development process.
 
@@ -33,7 +33,7 @@ Finally, GitHub allows you to create several types of links within comment field
 
 At this point, your Pull Request should be approved and you are ready to merge it in to the `master` branch. When you merge your branch, you are taking the content and history from your feature branch and adding it to the content and history of the `master` branch.
 
-![Merge](https://raw.githubusercontent.com/wheelhouseio/curriculum-github/master/images/merge.png)  
+![Merge](/images/merge.png)  
 
 Many project teams have established rules about who should merge a Pull Request. Some say it should be the person who created the Pull Request since they will be the ones to deal with any issues resulting from the merge. Others say it should be a single person within the project team to ensure consistency. Still others say it can be anyone other than the person who created the Pull Request. There are also third party Continuous Integration (CI) tools you can integrate with GitHub to test the build before the merge is completed.
 

@@ -41,7 +41,7 @@ Once you've verified you have the latest version of Git installed, you're ready 
 # Configuring Git
 
 ## Git Configuration Levels
-![config levels](config-levels.png)
+![config levels](/images/config-levels.png)
 
 The first thing you should do when you get started using Git is to set your configuration options.
 
@@ -52,12 +52,12 @@ Git allows you to set configuration options at three different levels. The defau
 + `--local` - These are the repository level configurations. They only apply to the specific repository where they are set.
 
 ## Previewing Configuration Settings
-![config list](config-list.jpg)
+![config list](/images/config-list.jpg)
 
 If you would like to see which config settings have already been added, you can type `git config --list`. This will automatically read from each of the storage containers for config settings and list them.
 
 ## Configuring User Name and Email
-![config username email](config-username-email.jpg)
+![config username email](/images/config-username-email.jpg)
 
 Go ahead and follow along as we set up our basic configurations. Git uses the config settings for your user name and email address to generate a unique fingerprint for each of the commits you create, so let's set our user name and email address first.
 
@@ -66,7 +66,7 @@ Type `git config --global user.name "<your_full_name>"` and type `git config --g
 Make sure to use the same email address that's associated with your GitHub account.
 
 ## Configuring Default Editor
-![config editor](config-editor.jpg)
+![config editor](/images/config-editor.jpg)
 
 Next, we will add a default text editor. This is the text editor Git will use when you need to edit things like commit messages or handle merge conflicts.
 
@@ -75,7 +75,7 @@ Typing `git config --global core.editor "atom --wait"` will tell Git to use the 
 If you don't have atom and would like to use it, you can find it at <a href="https://atom.io/" target="_blank">atom.io</a>. If you would like to use a different editor you can look for instructions <a href="https://help.github.com/articles/associating-text-editors-with-git/" target="_blank">here</a>.
 
 ## Configuring Autocrlf to Handle Whitespace
-![config-autocrlf](config-autocrlf.jpg)
+![config-autocrlf](/images/config-autocrlf.jpg)
 
 Different systems handle line endings and line breaks differently. If you open a file created on another system and do not have `autocrlf` set, Git will think you made changes to the file based on the way your system handles this type of file.
 
@@ -87,7 +87,7 @@ Type `git config --global core.autocrlf`.
 And for those wondering, `autocrlf` stands for "auto carriage return line feed".
 
 ## Configuring Default Push Behavior
-![config-push-default](config-push-default.jpg)
+![config-push-default](/images/config-push-default.jpg)
 
 One final configuration option we will want to set is our default value for push.
 

@@ -16,7 +16,7 @@ Whether on a profile or project page, it's best to create a branch before you do
 
 Then once you're ready, you'd create a Pull Request comparing your branch to `master` or `gh-pages`, and merge the branch once you're sure everything is working.
 
-![GitHub Workflow](https://raw.githubusercontent.com/wheelhouseio/curriculum-patchwork/master/images/github-flow.png)
+![GitHub Workflow](images/github-flow.png)
 
 Note that you won't be able to test your page online from your branch—you won't see it until you merge the branch. So, once it's up you may need to create a bugfix branch to touch up any rough spots. If you'd like to see your site before it goes live, you'll have to do that using Jekyll locally. We'll cover how to do that in the optional fourth section of this course as it's a little complex to get set up.
 

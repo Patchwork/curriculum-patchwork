@@ -68,7 +68,7 @@ Modified files are any files that you have edited and saved since the last time 
 Untracked and modified files exist in your **working directory**.
 
 
-![two stage commit](two-stage-commit-c.png)
+![two stage commit](/images/two-stage-commit-c.png)
 
 To add these files to version control, you will create a collection of files that represent a discrete unit of work. This way if you want to revert something in the future, it's easier to find and revert only the mistaken changes. 
 
@@ -88,7 +88,7 @@ To commit files, use the `git commit` command.
 Once changes are committed, the changes are added to the history of that branch, so that you can later see those specific changes, and even undo them if need be.
 
 
-![two stage commit](two-stage-commit-e.png)
+![two stage commit](/images/two-stage-commit-e.png)
 
 To review:
 
@@ -114,7 +114,7 @@ Let's use the two-stage commit to stage and commit our changes to the `bio` file
 * Commit your changes.
 
 ## Syncing Local Changes with GitHub
-![push](push.png)
+![push](/images/push.png)
 
 Now that you've committed files locally, it's time to make sure that your remote repository also reflects those changes. So we'll `push` the files and version history up to GitHub.
 
