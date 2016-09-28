@@ -1,7 +1,7 @@
 # Using Git Locally
 
 ## Cloning a Repository
-image: clone-diagram.png
+![clone diagram](/images/clone-diagram.png)
 
 Part of what makes git such a well-loved VCS is that it easily lets everyone on the team have their own local working repository. It's expected that everyone will work on their own computer, and sync changes they've made with each other only when they need to.
 
