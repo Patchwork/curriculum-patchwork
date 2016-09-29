@@ -6,6 +6,8 @@ The live courses can be found at the following student- and mentor-facing page.
 
 ## http://wheelhouseio.github.io/patchwork
 
+Static markdown versions of the courses can be found in the [Markdown Courses](https://github.com/wheelhouseio/curriculum-patchwork/tree/master/Markdown%20Courses) folder.
+
 # Validating a curriculum
 
 The application assumes that the incoming curriculum is in the correct YAML format and uses the "right" schema for each element. The upside is that any failure rollsback the entire import so its an all-or-nothing process. The downside is there is very little feedback other than "it failed".
